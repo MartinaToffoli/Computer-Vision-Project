@@ -12,7 +12,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Hyperparameters (for the network 28 x 28)
 in_channels = 1
-num_classes = 26
+num_classes = 24
 learning_rate = 1e-3  # Adam: 1e-5
 batch_size = 40  # 60
 num_epochs = 60
