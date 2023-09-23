@@ -3,7 +3,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch.utils import data
 from itertools import cycle
-from networks import Network_28x28_mmd
+from networks import Network_28x28
 from utilities import csv_loader
 from utilities import check_accuracy
 
@@ -27,7 +27,7 @@ print('* Test dataset homemade Dataset reading...done')
 
 # Load model
 
-model = Network_28x28_mmd.Network_28x28().to(device)
+model = Network_28x28.Network_28x28().to(device)
 
 #optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 optimizer = optim.SGD(model.parameters(), lr=learning_rate , momentum=0.9)
